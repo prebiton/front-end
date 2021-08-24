@@ -1,0 +1,131 @@
+https://notepad.pw/SotiFrontEndAug2021
+
+Github Project Repo: https://github.com/arunprabu/soti-front-end-aug2021
+
+Client Tool
+---
+  Browser (HTML Renderer + CSS Parser + JS Engine )
+
+Webapps
+---
+  1. Server Side Rendering Apps (SSR Apps / Traditional Webapps )
+      Architecure
+      ----
+        1 Server 
+          index.php 
+          Going thru Front End (HTML, CSS, JS) + Backend (Java/ Dotnet/ PHP/ Perl/ Python / Ruby/ NodeJS ) + DB Queries (SQL) 
+
+          Response:
+          ----
+            HTML, CSS, JS, Data
+          
+
+      Characteristics
+      ----
+        Pages will refresh
+
+      Adv
+      ---
+        * Search Engine Friendly (SEO)
+
+      Disadv
+      ---    
+        * Chaotic Codebase 
+        * Server has to do the heavylifting ( working on front end , b/e, db Queries)
+        * Slower Webapps 
+        * Higher Bandwidth Consumption 
+        * Expensive Apps 
+        * Bad User Experience
+
+
+  2. Client Side Rendering Apps (CSR Apps / Modern Webapps ) 
+      Architecure
+      -----
+        2 Servers 
+          1 Front End Server - (Single Page Apps - SPA)
+            Front End Code (HTML, CSS, JS)
+
+            Response:
+            ---
+              HTML, CSS, JS, Wait for the data 
+
+            SPA Frameworks/Libraries
+            -------
+              #1 React JS (Library)
+              #2 Angular 2+  (Framework)
+              #3 VueJS (Framework) 
+
+            SPA Characteristics
+            ----
+              1. Pages will not reload / refresh 
+              2. URL should change 
+              3. History should be maintained 
+              4. Header and Footer should be intact
+              5. Section in between header and footer -- should be updated
+              6. Active menu should be set 
+              7. Page Title should be changed
+
+            SPA Adv
+            --  
+              * Workload is shared by two servers 
+              * Faster webapps 
+              * Less Bandwidth Consumption
+              * Not Expensive
+              * Better UX 
+
+            SPA Disadv
+            ---   
+              * Initial Loading will take longer 
+              * Not Search Engine Friendly 
+
+
+          1 Back End Server - (RESTful API)
+            Back End Code (Java/Dotnet/PHP/Perl/Python/Ruby/NodeJS ) + DB Queries  
+            
+            Response: 
+            ----
+              Data (JSON)
+
+
+
+   ============
+	
+Webpages made with Structural layer (html)  + Presentation layer (css) + Interaction layer (js)
+
+Layouts
+---
+  1. Fixed Layout 
+
+  2. Fluid Layout
+
+
+HTML
+---
+  Standard
+  Structural Layer 
+
+  Types of Elements 
+  ---
+    1. Block-level Elements 
+        div, h1, ul, li
+    2. Inline Elements 
+        img, a, 
+
+Image Types
+---
+  1. Raster Images 
+      Formats: jpg, png, gif
+  2. Vector Images
+      Format: svg 
+
+HTML5
+---
+  header, footer,
+  main
+  aside
+  nav 
+
+
+  
+
+

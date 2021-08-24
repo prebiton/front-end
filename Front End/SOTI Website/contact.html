@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SOTI Website</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./assets/images/Logo2.png" alt="Soti Logo" width="160">
+        </a>
+        <nav id="primaryMenu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <section>
+            <h3>Reach out to us by filling this form</h3>
+            <form action="submit.php" method="POST">
+                <input type="text" placeholder="Enter search query here" name="" id="">
+                <button type="button">Search</button>
+                <br><br>
+                <label for="nameInput">Enter Name</label>
+                <input type="text" name="fullName" id="nameInput" required>
+                <br>
+                <label for="emailInput">Enter E-mail</label>
+                <input type="email" name="email" id="emailInput" required>
+                <br>
+                <label for="phoneInput">Enter Phone</label>
+                <input type="tel" name="phone" id="phoneInput">
+                <br>
+                <label for="mobileInput">Enter Mobile</label>
+                <input type="number" name="mobile" id="mobileInput" maxlength="10">
+                <br>
+                <fieldset>
+                    <legend>Age Info:</legend>
+                    <label for="ageInput">Enter Age</label>
+                    <input type="number" name="age" id="ageInput" min="13" max="99">
+                    <br>
+                    <label for="dobInput">Enter Date of Birth</label>
+                    <input type="date" name="dob" id="dobInput">
+                </fieldset>
+                <br>
+                <label for="interestInput">Interest in Trial Version</label>
+                <input type="range" name="interest" id="interestInput" min="0" max="5" step="1" value="0">
+                <br>
+                <label for="colorInput">Fav Color</label>
+                <input type="color" name="color" id="colorInput">
+                <br>
+                <label for="queryInput">Enter your query here</label>
+                <br>
+                <textarea maxlength="256" name="query" id="queryInput" cols="30" rows="10"></textarea>
+                <br>
+                <button type="reset">Reset</button>
+                <button type="submit">Sumbit</button>
+            </form>
+
+            <button onclick="locateMe()">Locate Me</button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2336.316323020048!2d76.34809194131851!3d10.000328567919208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d32853a4c37%3A0x49647ede06b21a67!2sSOTI%20India%20Private%20Limited!5e0!3m2!1sen!2sin!4v1629795219190!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        
+        <aside>
+            <address>
+                <strong> SOTI India Private Limited <br> </strong>
+                2nd Floor, Bestech Business Tower <br>
+                Sohna Road, Sector 48 <br>
+                Gurugram, Haryana 122004 <br>
+                India <br>
+                <abbr title="Phone">P:</abbr> +91-124-464-SOTI (7684) <br>
+                <a href="mailto:contact@soti.net">Say Hi...</a> <br>
+            </address>
+        </aside>
+
+    </main>
+
+    <footer>
+        <hr>
+        <nav id="secondaryMenu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>© 1995-2021 SOTI Inc. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function locateMe(){
+            if(navigator.geolocation){
+                alert('Browser is supporting geolocation')
+                navigator.geolocation.getCurrentPosition(showLocation, locationAccessDenied)
+            }
+            else{
+                alert('Browser does not support geolocation')
+            }
+        }
+        
+        function showLocation(position){
+            alert('Location accessable')
+            console.log(position.coords.latitude)
+            console.log(position.coords.longitude)
+        }
+
+        function locationAccessDenied(){
+            alert('Location access denied')
+        }
+    </script>
+</body>
+</html>
